@@ -1,0 +1,17 @@
+import java.util.*;
+
+class Transaction {
+    String id;
+    double fee;
+    String timestamp;
+
+    Transaction(String id, double fee, String timestamp) {
+        this.id = id;
+        this.fee = fee;
+        this.timestamp = timestamp;
+    }
+
+    public String toString() {
+        return id + ":" + fee + "@" + timestamp;
+    }
+}
